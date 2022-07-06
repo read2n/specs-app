@@ -108,7 +108,10 @@ function App() {
           </div>
           <article className='relative lg:w-[20.93rem] lg:mt-3 lg:mx-auto'>
             {phoneArticle.map((item, index) => (
-              <div className='w-[38rem] mt-24 lg:mb-7 lg:mt-0 lg:w-auto'>
+              <div
+                className='w-[38rem] mt-24 lg:mb-7 lg:mt-0 lg:w-auto'
+                key={index}
+              >
                 <h2 className='text-4xl text-white mb-7 lg:text-xl lg:mb-4 lg:text-center'>
                   {item.title}
                 </h2>
@@ -132,9 +135,10 @@ function App() {
               // render intro card
               intros.map((item, index) => (
                 <div
-                  className={`px-6 py-7 w-[24rem] h-[34rem] bg-[#222222] ${
+                  key={index}
+                  className={`px-6 py-7 w-[24rem] h-auto bg-[#222222] ${
                     index !== intros.length - 1 ? 'mr-6 lg:mr-3' : ''
-                  } lg:py-2 lg:px-1 lg:flex-1 lg:w-auto lg:h-[11.25rem] rounded-lg`}
+                  } lg:py-2 lg:px-1 lg:flex-1 lg:w-auto  rounded-lg flex flex-col`}
                 >
                   <div className='w-32 h-32 mx-auto mb-6 lg:w-7 lg:h-7 lg:mb-1'>
                     <img
@@ -145,12 +149,17 @@ function App() {
                   <h2 className='text-2xl text-white mb-7 lg:text-[0.4375rem] lg:mb-1'>
                     {item.title}
                   </h2>
-                  <p className='text-xl font-thin ml-5 text-white leading-7 break-words text-left h-60 lg:text-[0.375rem] lg:ml-0 lg:leading-[0.625rem] lg:h-20'>
+                  <p className='flex-1 text-xl font-thin ml-5 text-white leading-7 break-words text-left min-h-[13.875rem] lg:min-h-[8.75rem] lg:text-[0.375rem] lg:ml-0 lg:leading-[0.625rem]'>
                     {item.content}
                   </p>
-                  <div className='flex justify-end items-center'>
-                    <span className='text-sm text-[#4186e6] mr-1 lg:text-[0.25rem]'>More</span>
-                    <img src='static/imgs/next.png' className='w-7 h-7 lg:w-3 lg:h-3' />
+                  <div className='flex justify-end items-center mt-2'>
+                    <span className='text-sm text-[#4186e6] mr-1 lg:text-[0.25rem]'>
+                      More
+                    </span>
+                    <img
+                      src='static/imgs/next.png'
+                      className='w-7 h-7 lg:w-3 lg:h-3'
+                    />
                   </div>
                 </div>
               ))
@@ -159,7 +168,9 @@ function App() {
         </div>
         {/**  ------------------ roadmap ------------------*/}
         <div className='pt-32 pb-9 lg:pt-7 lg:pb-0'>
-          <h2 className='text-white text-4xl text-center lg:text-xl'>ROADMAP</h2>
+          <h2 className='text-white text-4xl text-center lg:text-xl'>
+            ROADMAP
+          </h2>
           <div className='pt-20 lg:pt-5'>
             <div className='roadmap-main w-[77.5rem] h-[38.5rem] mx-auto lg:w-[21.6875rem] lg:h-44'>
               {/* <img src='static/imgs/roadmap-bg.png' className='w-full h-full' /> */}
@@ -230,10 +241,15 @@ function App() {
         </div>
         {/**  ------------------ our ------------------*/}
         <div className='pt-32 lg:pt-6'>
-          <h2 className='text-white text-4xl text-center lg:text-xl'>OUR BAKERS</h2>
+          <h2 className='text-white text-4xl text-center lg:text-xl'>
+            OUR BAKERS
+          </h2>
           <div className='pt-16 pb-32 lg:pt-5 lg:pb-7'>
             <div className='h-[36rem] lg:w-96 lg:h-40 lg:mx-auto'>
-              <img src='static/imgs/info.png' className='h-full w-full mx-auto' />
+              <img
+                src='static/imgs/info.png'
+                className='h-full w-full mx-auto'
+              />
             </div>
           </div>
         </div>
@@ -244,15 +260,22 @@ function App() {
           {footers.map((item, index) => {
             return (
               <div
+                key={index}
                 className={`flex flex-col justify-center items-center ${
-                  index === 0 ? 'mr-36 lg:mr-9' : index === 1 ? 'mr-28 lg:mr-9' : ''
+                  index === 0
+                    ? 'mr-36 lg:mr-9'
+                    : index === 1
+                    ? 'mr-28 lg:mr-9'
+                    : ''
                 }`}
               >
                 <img
                   src={`static/imgs/${item.img}.png`}
                   className='w-16 h-16 lg:w-6 lg:h-6'
                 />
-                <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>{item.content}</p>
+                <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
+                  {item.content}
+                </p>
               </div>
             );
           })}
