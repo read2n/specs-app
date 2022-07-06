@@ -36,14 +36,14 @@ const intros = [
 ];
 
 const footers = [
-  {
-    img: 'twitter',
-    content: 'Twitter',
-  },
-  {
-    img: 'discord',
-    content: 'Discorder',
-  },
+  // {
+  //   img: 'twitter',
+  //   content: 'Twitter',
+  // },
+  // {
+  //   img: 'discord',
+  //   content: 'Discorder',
+  // },
   {
     img: 'logo',
     content: 'hello@read2N.com',
@@ -149,7 +149,7 @@ function App() {
                   <h2 className='text-2xl text-white mb-7 lg:text-[0.4375rem] lg:mb-1'>
                     {item.title}
                   </h2>
-                  <p className='flex-1 text-xl font-thin ml-5 text-white leading-7 break-words text-left min-h-[13.875rem] lg:min-h-[8.75rem] lg:text-[0.375rem] lg:ml-0 lg:leading-[0.625rem]'>
+                  <p className='flex-1 text-xl font-thin ml-5 text-white leading-7 break-words text-left min-h-[13.875rem] lg:min-h-[20px] lg:text-[0.375rem] lg:ml-0 lg:leading-[0.625rem]'>
                     {item.content}
                   </p>
                   <div className='flex justify-end items-center mt-2'>
@@ -167,7 +167,7 @@ function App() {
           </div>
         </div>
         {/**  ------------------ roadmap ------------------*/}
-        <div className='pt-32 pb-9 lg:pt-7 lg:pb-0'>
+        <div className='pt-32 pb-32 lg:pt-7 lg:pb-7'>
           <h2 className='text-white text-4xl text-center lg:text-xl'>
             ROADMAP
           </h2>
@@ -240,7 +240,7 @@ function App() {
           </div>
         </div>
         {/**  ------------------ our ------------------*/}
-        <div className='pt-32 lg:pt-6'>
+        {/* <div className='pt-32 lg:pt-6'>
           <h2 className='text-white text-4xl text-center lg:text-xl'>
             OUR BAKERS
           </h2>
@@ -252,7 +252,7 @@ function App() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
       {/**  ------------------ footer ------------------*/}
       <footer className='bg-[#222222] filter-[blur(50px)] pt-12 pb-10 lg:pt-4 lg:pb-6'>
@@ -261,13 +261,9 @@ function App() {
             return (
               <div
                 key={index}
-                className={`flex flex-col justify-center items-center ${
-                  index === 0
-                    ? 'mr-36 lg:mr-9'
-                    : index === 1
-                    ? 'mr-28 lg:mr-9'
-                    : ''
-                }`}
+                className={`flex flex-col justify-center items-center 
+                
+                `}
               >
                 <img
                   src={`static/imgs/${item.img}.png`}
