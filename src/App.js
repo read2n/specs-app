@@ -138,7 +138,7 @@ function App() {
                   key={index}
                   className={`px-6 py-7 w-[24rem] h-auto bg-[#222222] ${
                     index !== intros.length - 1 ? 'mr-6 lg:mr-3' : ''
-                  } lg:py-2 lg:px-1 lg:flex-1 lg:w-auto  rounded-lg flex flex-col`}
+                  } lg:py-2 lg:px-1 lg:flex-1 lg:w-auto lg:rounded-[3px] flex flex-col`}
                 >
                   <div className='w-32 h-32 mx-auto mb-6 lg:w-7 lg:h-7 lg:mb-1'>
                     <img
