@@ -2,6 +2,10 @@
   cursor: pointer;
 }
 
+html {
+  font-size: 16px;
+}
+
 .header-wrap {
   background-image: url('/public/static/imgs/background.png');
   background-size: cover;
@@ -9,7 +13,7 @@
 }
 
 .roadmap-main {
-  background-image: url('/public/static/imgs/roadmap.png');
+  background-image: url('/public/static/imgs/roadmap-bg.png');
   background-size: cover;
   background-position: top;
 }

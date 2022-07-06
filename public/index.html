@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    							minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -24,7 +26,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Read2N</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +41,32 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      var fun = function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            // 这里是假设在750px宽度设计稿的情况下，1rem = 100px；
+            // 可以根据实际需要修改 
+            // 1920 响应的最大屏幕
+            if (clientWidth > 630) {
+              docEl.style.fontSize = (clientWidth / 1920) * 16 + 'px';
+            }
+            else {
+              // docEl.style.fontSize = (clientWidth / 600) * 16 + 'px';
+              docEl.style.fontSize = '16px';
+            }
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+}
+fun(document, window);
+window.onresize = function () {
+    fun(document, window);
+}
+    </script>
   </body>
 </html>
