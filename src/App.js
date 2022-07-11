@@ -36,17 +36,25 @@ const intros = [
 ];
 
 const footers = [
-  // {
-  //   img: 'twitter',
-  //   content: 'Twitter',
-  // },
+  {
+    img: 'twitter',
+    content: 'Twitter',
+    w: 16,
+    h: 16,
+    lgw: 6,
+    lgh: 6,
+  },
   // {
   //   img: 'discord',
   //   content: 'Discorder',
   // },
   {
-    img: 'logo',
+    img: 'read2n',
     content: 'hello@read2N.com',
+    w: 40,
+    h: 16,
+    lgw: 13,
+    lgh: 6
   },
 ];
 
@@ -262,12 +270,12 @@ function App() {
               <div
                 key={index}
                 className={`flex flex-col justify-center items-center 
-                
+                ${index === footers.length - 1 ? '' : 'mr-28 lg:mr-11'}
                 `}
               >
                 <img
                   src={`static/imgs/${item.img}.png`}
-                  className='w-16 h-16 lg:w-6 lg:h-6'
+                  className={`w-${item.w} h-${item.h} lg:w-${item.lgw} lg:h-${item.lgh}`}
                 />
                 <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
                   {item.content}
