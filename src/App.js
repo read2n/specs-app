@@ -1,5 +1,4 @@
 import './App.css';
-import clsx from 'clsx';
 
 const phoneArticle = [
   {
