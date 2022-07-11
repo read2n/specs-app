@@ -19,12 +19,12 @@ const intros = [
   },
   {
     title: 'PROOF OF CONTRIBUTION',
-    content: 'Participate in the distribution to earn tokenNo matter buying NFT and lending it, Or reading a novel and write comments about it, You would receive the award from the transaction fee.',
+    content: 'Participate in the distribution to earn token. No matter buying NFT and lending it, or reading a novel and write comments about it, you would receive the award from the transaction fee.',
     img: 'book',
   },
   {
     title: 'READ AND EARN EASILY',
-    content: 'No need to buy NFT, Renting a NFT would get you started on ‘read to earn’ . Your reading, brings consensus to the novel and brings more value to the novel’s metaverse. You deserve to be awarded.',
+    content: 'No need to buy NFT, renting a NFT would get you started on ‘read to earn’ . Your reading, brings consensus to the novel and brings more value to the novel’s metaverse. You deserve to be awarded.',
     img: 'profile',
   },
 ];
