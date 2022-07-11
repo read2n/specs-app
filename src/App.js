@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import clsx from 'clsx';
 
 const phoneArticle = [
   {
@@ -89,11 +89,11 @@ function App() {
   return (
     <div className='wrap w-full h-full bg-[#121212]'>
       {/**  ------------------ header ------------------*/}
-      <header className='header-wrap h-[63rem] lg:h-72 text-center'>
-        <div className='pt-20 ml-20 w-[5rem] lg:pt-5 lg:ml-5 lg:w-8'>
+      <header className='header-wrap h-[63rem] lg:h-72 text-center pt-20 lg:pt-5'>
+        <div className='ml-20 w-56 h-14 lg:ml-5 lg:w-20 lg:h-5'>
           <img src='static/imgs/logo.png' />
         </div>
-        <p className='text-6xl text-white mt-20 lg:text-xl lg:mt-6'>
+        <p className='text-6xl text-white mt-20 lg:text-xl lg:mt-9'>
           Read the novels
         </p>
         <p className='text-6xl text-white mt-10 lg:text-xl lg:mt-2'>
@@ -265,24 +265,28 @@ function App() {
       {/**  ------------------ footer ------------------*/}
       <footer className='bg-[#222222] filter-[blur(50px)] pt-12 pb-10 lg:pt-4 lg:pb-6'>
         <div className='flex justify-center'>
-          {footers.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={`flex flex-col justify-center items-center 
-                ${index === footers.length - 1 ? '' : 'mr-28 lg:mr-11'}
-                `}
-              >
-                <img
-                  src={`static/imgs/${item.img}.png`}
-                  className={`w-${item.w} h-${item.h} lg:w-${item.lgw} lg:h-${item.lgh}`}
-                />
-                <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
-                  {item.content}
-                </p>
-              </div>
-            );
-          })}
+            <div
+              className={`flex flex-col justify-center items-center mr-28 lg:mr-11`}
+            >
+              <img
+                src={`static/imgs/twitter.png`}
+                className='w-16 h-16 lg:w-6 lg:h-6'
+              />
+              <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
+                Twitter
+              </p>
+            </div>
+            <div
+              className={`flex flex-col justify-center items-center`}
+            >
+              <img
+                src={`static/imgs/read2n.png`}
+                className='w-40 h-16 lg:w-14 lg:h-6'
+              />
+              <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
+                hello@read2N.com
+              </p>
+            </div>
         </div>
         <p className='mt-[5.5rem] text-white text-opacity-75 text-base text-center lg:mt-7 lg:text-[0.3375rem]'>
           Copyright MetaNovel Lab Ltd. 2022 All Rights Reserved
