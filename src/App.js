@@ -4,33 +4,28 @@ import clsx from 'clsx';
 const phoneArticle = [
   {
     title: 'WHAT IS READ2N',
-    content:
-      'Read2N is a IP (based on NFT) Marketplace. Users could buy/sell IP NFT, lend/borrow IP NFT; Users could read/comment/discuss copyrighted literature;Read2N will help NFT users to construct IP-governing DAO.',
+    content: 'Read2N is a IP (based on NFT) Marketplace. Users could buy/sell IP NFT, lend/borrow IP NFT; Users could read/comment/discuss copyrighted literature; Read2N will help NFT users construct IP-governing DAO.'
   },
   {
     title: 'READING CREATES CONSENSUS',
-    content:
-      'Reading creates consensus, consensus value feeds back into the reading.The majority of transaction fee would be awarded to all of the participants.Part of the (book) rental fee would be used as the IP-NFT governance fee.',
+    content: 'Reading creates consensus, consensus value feeds back into the reading. The majority of transaction fee would be awarded to all of the participants. Part of the (book) rental fee would be used as the IP-NFT governance fee.'
   },
 ];
 
 const intros = [
   {
     title: 'OWN THE REAL PROPERTY',
-    content:
-      'NFT has the right for reading the whole novel and the right to participate in the governance of the novel’s copyright.Shares all of the resulting business benefits of the copyright. And you could get rental income by lending (your) NFT.',
+    content: 'NFT has the right for reading the whole novel and the right to participate in the governance of the novel’s copyright. Shares all of the resulting business benefits of the copyright. And you would receive rental income by lending (your) NFT.',
     img: 'avatar',
   },
   {
     title: 'PROOF OF CONTRIBUTION',
-    content:
-      'Participate in the distribution to earn tokenNo matter buying NFT and lending it,Or reading a novel and write comments about it,You would receive the award from the transaction fee.',
+    content: 'Participate in the distribution to earn tokenNo matter buying NFT and lending it, Or reading a novel and write comments about it, You would receive the award from the transaction fee.',
     img: 'book',
   },
   {
     title: 'READ AND EARN EASILY',
-    content:
-      'No need to buy NFT,Renting a NFT would get you started on ‘read to earn’  . Your reading, brings consensus to the novel and brings more value to the novel’s metaverse.You deserve to be awarded.',
+    content: 'No need to buy NFT, Renting a NFT would get you started on ‘read to earn’ . Your reading, brings consensus to the novel and brings more value to the novel’s metaverse. You deserve to be awarded.',
     img: 'profile',
   },
 ];
