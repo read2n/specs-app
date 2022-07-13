@@ -267,7 +267,7 @@ function App() {
                 className='w-16 h-16 lg:w-6 lg:h-6'
               />
               <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
-                Twitter
+                <a href="https://twitter.com/Read2N" target="_blank">Twitter</a>
               </p>
             </div>
             <div
@@ -278,7 +278,7 @@ function App() {
                 className='w-40 h-16 lg:w-14 lg:h-6'
               />
               <p className='text-xl text-white mt-2 lg:text-[0.45rem] leading-[0.5625rem] lg:mt-1'>
-                hello@read2N.com
+                <a href="mailto:hello@read2N.com">hello@read2N.com</a>
               </p>
             </div>
         </div>
