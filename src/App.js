@@ -283,7 +283,7 @@ function App() {
             </div>
         </div>
         <p className='mt-[5.5rem] text-white text-opacity-75 text-base text-center lg:mt-7 lg:text-[0.3375rem]'>
-          Copyright MetaNovel Lab Ltd. 2022 All Rights Reserved
+          Copyright Metasset lab Lab Ltd.  2022 All Rights Reserved
         </p>
       </footer>
     </div>
